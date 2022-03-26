@@ -1,8 +1,10 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'  
 import "./Cart.css"
 
 const Cart =({ data, countBtn })=> {
-    console.log(data);
+    
     return (
         <>
           {data.map((item, id) => {
@@ -21,6 +23,7 @@ const Cart =({ data, countBtn })=> {
                   onClick={() => countBtn(item)}
                 >
                   Add to Cart
+                  <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
                 </button>
               </div>
             );
