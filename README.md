@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Fruits bazer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was sinple with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
