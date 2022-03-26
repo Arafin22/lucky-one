@@ -7,17 +7,17 @@ const Cart =({ data, countBtn })=> {
         <>
           {data.map((item, id) => {
             return (
-              <div className={`col-sm-4 mb-3 ${item.text}`} key={id}>
+              <div className={item.text} key={id}>
                 <img src={item.image} className="product-image" alt="" />
     
-                <div className="d-flex mt-2">
+                <div className="">
                   <h3>{item.text}</h3>
                   <h3>$ {item.price}</h3>
                 
                 </div>
                 <button
-                  type="submit"
-                  className="btn btn-primary cartBtn my-3"
+                 
+                  className="bt-button"
                   onClick={() => countBtn(item)}
                 >
                   Add to Cart

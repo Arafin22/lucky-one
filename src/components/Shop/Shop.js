@@ -34,12 +34,12 @@ const Shop = () => {
       <h1>Shopping Cart</h1>
       <h1>{state}</h1>
 
-      <div className="">
+      <div>
           <span> Item Length {cartLists.length}</span>
       </div>
 
     
-          <div className="">
+          <div>
           <h3>Cart Lists</h3>
 
             <div className="products-list-container">
@@ -47,42 +47,34 @@ const Shop = () => {
               {cartLists.map(({ image, price, text }, id) => (
                 <div
                   key={{id}}
-                  className=""
                 >
                   <img className="product-image" alt={image} src={image} />
-                  <div className="">
+                  <div>
                     <h3>{text}</h3>
                     
-                    <h3 className="">${price}</h3>
+                    <h3>${price}</h3>
                    
                   </div>
                  
                  
                 </div>
               ))}
-
-              
-             
+    
             </div>
-            <div className="">
+            <div >
             <button
-                  className=""
+                  className="bt-button"
                   onClick={()=>handleClick()}
                 >
                   random select
-                </button>
-
-            
+                </button>   
                 <button
-                  className=""
+                  className="bt-button"
                   onClick={clearCart}
                 >
                   Clear Cart
                 </button>
-
-              
               </div>
-            {/* filter section */}
             <div className="products-container">
               <Cart data={data} countBtn={addToCart} />
             </div>
